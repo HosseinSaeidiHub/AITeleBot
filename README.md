@@ -1,24 +1,19 @@
 # AI-Powered Telegram Bot Suite
 
-## Overview
-Brief description of the bot suite: NLP text generation, task management, user interaction.
+A modular, object-oriented Telegram bot framework featuring:
 
-## Features
-- Text generation (GPT-based)
-- Task creation, updating, reminders
-- Interactive menus via inline keyboards
+- **GPT-based text generation**  
+- **Task creation, updating & reminders**  
+- **Interactive menus** via Inline Keyboards  
+- **Pluggable storage** (SQLite, Redis, …)  
+- **Clean separation** of core, handlers, models  
 
-## Architecture
-- Bot core (python-telegram-bot)
-- NLP model wrappers
-- Storage (SQLite / Redis)
+## ⚙️ Installation
 
-## Installation
-1. Clone repo  
-2. Create virtualenv & install `requirements.txt`  
-3. Set environment variables (BOT_TOKEN, MODEL_PATH)
-
-## Usage
 ```bash
-python run_bot.py
-
+git clone https://github.com/HosseinSaeidiHub/AITeleBot.git
+cd AITeleBot
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp .env.aitelebot .env          # set BOT_TOKEN, MODEL_PATH, etc.
